@@ -109,15 +109,14 @@ $(function() {
          */
          beforeEach(function(done){ //loadFeed() is asynchronous.
             loadFeed(0,function(){
-                firstFeed=$('.feed').html();
-                done();
-            });
-
-            loadFeed(1,function(){
+                firstFeed=$('.feed').html();             
+            
+             loadFeed(1,function(){
                 secondFeed=$('.feed').html();
                 done();
+             });
             });
-         });
+        });
          
          it('changes content', function(){              
                 
